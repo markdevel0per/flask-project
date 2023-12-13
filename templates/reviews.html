@@ -1,0 +1,32 @@
+{% extends 'base.html'%}
+
+{%block head%}
+<title>Reveiws</title>
+{%endblock%}
+
+{% block reviews %}
+btn-light
+{% endblock %}
+
+{%block body%}
+<h1 class="text-center mb-2">Reviews</h1>
+{% if reviews %}
+{%for element in reviews%}
+    <div class="alert bg-dark container mb-5">
+            {% if element.module_mark == '1'%}
+                <h4>User liked the website</h4>
+            {% else %}
+                <h4>User disliked the website</h4>
+            {% endif %}
+            <h2>{{element.username}}</h2>
+            <h4>{{element.content}}</h4>
+            <p><b>{{element.date.date()}}</b></p>
+            <a href="/reviews/{{ element.id }}/" class="btn btn-success  ">Detailed</a>
+            <a href="/reviews/update/{{element.id}}" class="btn btn-warning ml-3">Update</a>
+            <a href="/reviews/delete/{{element.id}}" class="btn btn-danger ml-3">Delete</a>
+    </div>
+{%endfor%}
+{% else %}
+<h5 class="text-center">There are no reviews yet. Create the first review on the <a href="/about-me">Write a review</a> page.</h5>
+{% endif %}
+{%endblock%}

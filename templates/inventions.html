@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Tesla's Inventions</title>
+{% endblock %}
+
+{% block inventions %}
+btn-info
+{% endblock %}
+
+{% block body %}
+<h1 class="text-center">Nikola Tesla's Inventions:</h1>
+<div class="row row-cols-1 text-center">
+  <div class="card row mx-auto bg-dark" style="width: 20rem;">
+  <img class="card-img-top" src="{{url_for('static', filename='inventions/ac.png')}}" alt="Alternating current">
+  <div class="card-body">
+    <h5 class="card-title">Alternating Current</h5>
+    <p class="card-text">Alternating current is Tesla's invention that involves the flow of charge that periodically reverses direction. It is a type of electrical current commonly used in power systems to transmit electricity efficiently over long distances. Tesla's pioneering work on alternating current, including the contributions to the development of the AC distribution system, revolutionized the field of electrical power and played a crucial role in the widespread adoption of electricity for various applications.</p>
+    <a href="https://en.wikipedia.org/wiki/Alternating_current" class="btn btn-light" target="_blank">More information</a>
+  </div>
+</div>
+<div class="card row mx-auto bg-dark" style="width: 20rem;">
+  <img class="card-img-top" src="{{url_for('static', filename='inventions/tesla-coil.jpg')}}" alt="Tesla coil" height="245px">
+  <div class="card-body">
+    <h5 class="card-title">Tesla Coil</h5>
+    <p class="card-text">The Tesla coil is a resonant transformer that produces high-voltage, low-current, high-frequency alternating current electricity. It consists of two coils, a primary and a secondary, which are wound around a toroidal core. The Tesla coil is known for producing spectacular electrical displays, such as long sparks, lightning-like discharges, and glowing gas-filled tubes. Tesla's work with the coil and laid the foundation for wireless communication.</p>
+    <a href="https://en.wikipedia.org/wiki/Tesla_coil" class="btn btn-light" target="_blank">More information</a>
+  </div>
+</div>
+<div class="card row mx-auto bg-dark" style="width: 20rem;">
+  <img class="card-img-top" src="{{url_for('static', filename='inventions/induction-motor.jpg')}}" alt="Induction Motor" height="220px">
+  <div class="card-body">
+    <h5 class="card-title">Induction Motor</h5>
+    <p class="card-text">The induction motor is a high-efficiency device that uses rotating magnetic fields to convert electrical energy into mechanical energy. It consists of a stator and a rotor, with the stator creating a rotating magnetic field that induces currents in the rotor. This interaction generates torque, allowing the motor to spin. Tesla's invention of the induction motor revolutionized industrial processes and enabled the widespread use of electric power in machines and appliances.</p>
+    <a href="https://en.wikipedia.org/wiki/Induction_motor" class="btn btn-light" target="_blank">More information</a>
+  </div>
+</div>
+<div class="card row mx-auto bg-dark" style="width: 20rem;">
+  <img class="card-img-top" src="{{url_for('static', filename='inventions/wpt.jpg')}}" alt="Wireless Power Transfer" height="190px">
+  <div class="card-body">
+    <h5 class="card-title">Wireless Power Transfer</h5>
+    <p class="card-text">Tesla had a vision of transmitting electricity wirelessly, which he referred to as "wireless power." He conducted experiments and developed various devices to demonstrate the feasibility of wireless power transmission. One of his notable experiments involved the construction of the Wardenclyffe Tower, a wireless power transmission station. His work contributed to the development of wireless technologies, including radio communication and resonant inductive coupling used in wireless charging today.</p>
+    <a href="https://en.wikipedia.org/wiki/Wireless_power_transfer" class="btn btn-light" target="_blank">More information</a>
+  </div>
+</div>
+<div class="card row mx-auto bg-dark" style="width: 20rem;">
+  <img class="card-img-top" src="{{url_for('static', filename='inventions/tesla-turbine.jpg')}}" alt="Tesla turbine">
+  <div class="card-body">
+    <h5 class="card-title">Tesla Turbine</h5>
+    <p class="card-text">The Tesla turbine is a bladeless turbine design that uses fluid friction to generate power. It consists of multiple closely spaced discs mounted on a shaft, with fluid directed through the gaps between the discs. The fluid's kinetic energy is converted into rotational energy as it passes through the discs. Tesla believed that his turbine design would be more efficient than traditional turbine due to its ability to handle high-speed, high-pressure flows and its simplicity. But it has not been widely adopted in large-scale power generation.</p>
+    <a href="https://en.wikipedia.org/wiki/Tesla_turbine" class="btn btn-light" target="_blank">More information</a>
+  </div>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Tesla's Legacy</title>
+{% endblock %}
+
+{% block legacy %}
+btn-info
+{% endblock %}
+
+{% block body %}
+<h1 class="text-center">Nikola Tesla's Legacy</h1>
+  <div class="row mx-auto gy-0">
+    <div class="col-md-4">
+      <div class="card mb-4 bg-dark">
+        <img src="{{url_for('static', filename='legacy/radio.jpg')}}" class="card-img-top" alt="Radio">
+        <div class="card-body">
+          <h5 class="card-title">Radio</h5>
+          <p class="card-text">The invention of radio is often attributed to Guglielmo Marconi, but Nikola Tesla played a significant role in its development. Tesla's experiments and patents on wireless transmission of signals laid the groundwork for wireless communication systems. Although Marconi successfully commercialized the technology, Tesla's contributions were later recognized and his patents were upheld in court battles.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-4 bg-dark">
+        <img src="{{url_for('static', filename='legacy/tesla-company.png')}}" class="card-img-top" alt="Tesla Company">
+        <div class="card-body">
+          <h5 class="card-title">Tesla Company</h5>
+          <p class="card-text">Tesla, the company, was established in 2003 by a group of engineers and entrepreneurs with the goal of accelerating the world's transition to sustainable energy. With a vision of revolutionizing the automotive industry, Tesla has become a global leader in electric vehicles and clean energy solutions. Driven by the principles of innovation, efficiency, and environmental consciousness, Tesla has been at the forefront of developing cutting-edge technologies that push the boundaries of what is possible. By harnessing the power of electric propulsion, Tesla vehicles have redefined the concept of driving, offering exhilarating performance, zero tailpipe emissions, and a seamless user experience.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-4 bg-dark">
+        <img src="{{url_for('static', filename='legacy/tesla-y.jpg')}}" class="card-img-top" alt="Tesla's Impact">
+        <div class="card-body">
+          <h5 class="card-title">Tesla Electric Cars</h5>
+          <p class="card-text">Tesla, under the leadership of Elon Musk, has become synonymous with electric vehicles (EVs) and renewable energy. The company's pioneering efforts in EVs have revolutionized the automotive industry and propelled the widespread adoption of electric cars. Tesla's vehicles, such as the Model S, Model 3, Model X, and Model Y, have set new standards for performance, range, and technology in the EV market. Furthermore, Tesla's Supercharger network and advancements in autonomous driving technology have further cemented the company's position as a leader in the electric vehicle industry.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mx-auto">
+    <div class="col-md-4">
+      <div class="card mb-4 bg-dark">
+        <img src="{{url_for('static', filename='legacy/energy-storage.jpg')}}" class="card-img-top" alt="Energy Storage and Gigafactories" width="512px">
+        <div class="card-body">
+          <h5 class="card-title">Energy Storage and Gigafactories</h5>
+          <p class="card-text">In addition to electric vehicles, Tesla produces energy storage solutions, such as the Powerwall and Powerpack, which aim to enable homes and businesses to harness and store renewable energy. The company's Gigafactories, dedicated to battery production, have further accelerated the development and scale of sustainable energy technologies.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 ">
+      <div class="card mb-4 bg-dark">
+        <img src="{{url_for('static', filename='legacy/businessmodel.png')}}" class="card-img-top" alt="Innovative Business Model and Autonomy">
+        <div class="card-body">
+          <h5 class="card-title">Innovative Business Model and Autonomy</h5>
+          <p class="card-text">Tesla's innovative business model, direct-to-consumer sales approach, and commitment to advancing autonomous driving technology have disrupted traditional automotive industry practices. The company's success has inspired other automakers to invest more heavily in electric vehicles, spurring global efforts to reduce reliance on fossil fuels and combat climate change.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-4 bg-dark">
+        <img src="{{url_for('static', filename='legacy/tesla-legend.jpg')}}" class="card-img-top" alt="Overall Impact">
+        <div class="card-body">
+          <h5 class="card-title">Overall Impact</h5>
+          <p class="card-text">Tesla's influence on the clean energy movement and the push for sustainable transportation has solidified its place in modern history. The company's contributions to the automotive and clean energy industries have left an enduring legacy, making a significant impact on the way we think about transportation and energy consumption.</p        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

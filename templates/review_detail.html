@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Review №{{review.id}}</title>
+{% endblock %}
+
+{% block reviews %}
+btn-light
+{% endblock %}
+
+{% block body %}
+<div class="text-center ret">
+{% if review.module_mark == '1'%}
+                <h4>User liked the website</h4>
+            {% else %}
+                <h4>User disliked the website</h4>
+            {% endif %}
+            <h1>{{review.username}}</h1>
+            <h4>{{review.content}}</h4>
+            <h4><b>{{review.date.date()}}</b></h4>
+        </div>
+<img src="{{url_for('static', filename='watch_reviews/review.png')}}" alt="">
+{% endblock %}

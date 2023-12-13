@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Updating review number {{review.id}}</title>
+{% endblock %}
+
+{% block reviews %}
+btn-light
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5 text-center content">
+    <h1 class="mb-5">Updating a review</h1>
+    <div class="form">
+    <form method="post" action="/reviews/update/{{review.id}}">
+        <input type="text" name="content" id="content" value="{{review.content}}" class="mb-5"><br>
+        <input type="submit" class="btn btn-success" value="Update">
+    </form>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,48 @@
+body {
+    background-color: black;
+    font-family: monospace;
+}
+
+.navbar {
+    font-family: sans-serif;
+}
+
+
+.topg {
+    font-size: 45px;
+    margin-top: 250px;
+}
+
+
+.fat {
+    font-size: 60px;
+}
+
+
+.headersss {
+    font-size: 45px;
+}
+
+
+.about-me {
+    color: white;
+}
+
+
+h1, h2, h3, h4, h5, p, span {
+    color: white;
+    font-size: 40;
+}
+
+.feedback {
+    color: white;
+    position: absolute;
+    left: 800px;
+    top: 200px;
+}
+
+.ret {
+    border: 1px solid white;
+}
+
+

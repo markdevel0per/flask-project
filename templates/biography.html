@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Tesla's Biography</title>
+{% endblock %}
+
+{% block biography %}
+btn-info
+{% endblock %}
+
+{% block body %}
+    <h1 class="text-center">Nikola Tesla's biography</h1>
+	<div class="main">
+		<img src="{{url_for('static', filename='biography/nikola-tesla-orig.jpg')}}" alt="Nikola Tesla" height="600" style="float: left; margin-right: 30px; margin-left: 20px;" class="mr-5">
+		<div class="text" style="font-size: 1.25rem;">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Nikola Tesla, born on July 10, 1856, in Smiljan, part of the Austrian Empire, was a remarkable individual known for his contributions to the fields of electrical engineering and physics.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Tesla's early life was marked by his exceptional intellect and curiosity. He pursued an education in engineering and physics, laying the foundation for his future endeavors. After completing his education, Tesla began his career at the Continental Edison Company in Paris, where he gained valuable experience in electrical power systems.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;In 1884, Tesla immigrated to the United States, driven by a desire to work with renowned inventor Thomas Edison. He joined Edison's company in New York but soon diverged in his beliefs. Tesla firmly believed in the potential of alternating current (AC), while Edison favored direct current (DC). This difference in opinion led to their eventual professional separation.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Undeterred, Tesla established his own laboratory and company, where he dedicated himself to scientific exploration and experimentation. He conducted research in various areas, delving into the realms of electrical engineering and physics. Tesla's innovative thinking and relentless pursuit of knowledge led him to propose unique concepts and ideas.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Throughout his life, Tesla faced numerous challenges, including financial difficulties and rivalries with other inventors. However, his unwavering determination and passion for his work kept him moving forward.</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Tesla's life was marked by a deep curiosity about the world and a desire to push the boundaries of scientific understanding. He was known for his eccentricities and reclusive nature, often devoting himself entirely to his work. Despite not receiving widespread recognition during his lifetime, Tesla's contributions to science and technology have gained immense appreciation in subsequent years.</p>
+<p></p><br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Nikola Tesla passed away on January 7, 1943, in New York City, leaving behind a legacy that continues to inspire and captivate the imagination of scientists, inventors, and enthusiasts worldwide. His life serves as a testament to the power of curiosity, perseverance, and the pursuit of knowledge.</p>
+		</div>
+	</div>
+    
+{% endblock %}
+

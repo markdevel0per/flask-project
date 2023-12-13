@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{%block head%}
+<title>Nikola Tesla</title>
+{%endblock%}
+
+{% block teslalogo %}
+src="{{url_for('static', filename='index/tesla-logo-activated.jpg')}}"
+{% endblock %}
+
+{% block body %}
+<img src="{{url_for('static', filename='index/index-image.png')}}" alt="Index-image" height="870px" width="1900px">
+{% endblock %}

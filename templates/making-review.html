@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Writing a review</title>
+{% endblock %}
+
+{% block writingareview %}
+btn-warning
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5 text-center">
+    <h1>Writing a review</h1>
+    <form method="post">
+        <input type="text" name="username" id="username" class="form-control" placeholder="Username"><br>
+        <input class="form-control" name="content" id="content" cols="20" rows="3"
+                  placeholder="Write the review here"></input><br>
+        <div class="form-check mb-3">
+            <input type="checkbox" name="module_mark" value="1" style="transform: scale(1.5);"><span style="font-size: larger;">&nbsp;I like the website</span>
+        </div>
+        <input type="submit" class="btn btn-success" value="Submit">
+    </form>
+</div>
+{% endblock %}
